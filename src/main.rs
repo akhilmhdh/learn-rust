@@ -1,6 +1,7 @@
 use std::io;
 
 mod basic;
+mod guessing_game;
 mod temp_converter;
 
 fn main() {
@@ -12,7 +13,8 @@ fn main() {
 Select the program
 1. Basics
 2. Temp Converter
-3. Exit :( "
+3. Guessing Game
+*. Exit :( "
         );
 
         io::stdin()
@@ -26,8 +28,8 @@ Select the program
         match program_number {
             1 => basic::main(),
             2 => temp_converter::main(),
-            3 => break,
-            _ => println!("invalid option"),
+            3 => guessing_game::main(),
+            _ => break,
         };
     }
 }
