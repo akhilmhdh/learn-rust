@@ -1,6 +1,7 @@
 use std::io;
 
 mod basic;
+mod factorial;
 mod guessing_game;
 mod temp_converter;
 
@@ -14,6 +15,7 @@ Select the program
 1. Basics
 2. Temp Converter
 3. Guessing Game
+4. Factorial
 *. Exit :( "
         );
 
@@ -29,6 +31,7 @@ Select the program
             1 => basic::main(),
             2 => temp_converter::main(),
             3 => guessing_game::main(),
+            4 => factorial::main(),
             _ => break,
         };
     }
