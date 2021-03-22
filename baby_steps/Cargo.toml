@@ -1,5 +1,5 @@
 [package]
-name = "learn_rust"
+name = "baby_steps"
 version = "0.1.0"
 authors = ["akhilmhdh <akhilmhdh@gmail.com>"]
 edition = "2018"
