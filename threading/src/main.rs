@@ -2,6 +2,7 @@ use std::io;
 
 mod basic_threading;
 mod channel;
+mod mutex;
 
 fn main() {
     loop {
@@ -12,6 +13,7 @@ fn main() {
 Threading
 1. Basic Threading
 2. Channel
+3. Mutex
 0. Exit
         "
         );
@@ -24,6 +26,7 @@ Threading
             0 => break,
             1 => basic_threading::main(),
             2 => channel::main(),
+            3 => mutex::main(),
             _ => println!("invalid option"),
         }
     }
